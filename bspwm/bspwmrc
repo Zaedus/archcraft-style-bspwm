@@ -94,6 +94,9 @@ dunst \
 -nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
 -cb "$BACKGROUND" -cf "$RED" -cfr "$RED" &
 
+# Lauch xsettingsd daemon
+xsettingsd &
+
 # Lauch keybindings daemon
 sxhkd &
 
@@ -118,3 +121,6 @@ bspcolors
 bspcomp
 bspbar
 bspfloat &
+
+## Adjust backlight (AMD)
+#blight -d amdgpu_bl0 set 15%

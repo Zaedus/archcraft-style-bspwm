@@ -40,7 +40,7 @@ case $chosen in
         fi
         ;;
     $lock)
-        betterlockscreen --lock
+        bsplock
         ;;
     $suspend)
 		ans=$($HOME/.config/bspwm/rofi/bin/confirm)

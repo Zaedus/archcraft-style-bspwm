@@ -97,6 +97,9 @@ dunst \
 # Lauch xsettingsd daemon
 xsettingsd &
 
+# polkit agent
+/usr/lib/xfce-polkit/xfce-polkit &
+
 # Lauch keybindings daemon
 sxhkd &
 

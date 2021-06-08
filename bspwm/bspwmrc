@@ -98,7 +98,9 @@ dunst \
 xsettingsd &
 
 # polkit agent
-/usr/lib/xfce-polkit/xfce-polkit &
+if [[ ! `pidof xfce-polkit` ]]; then
+	/usr/lib/xfce-polkit/xfce-polkit &
+fi
 
 # Lauch keybindings daemon
 sxhkd &
